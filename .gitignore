@@ -1,0 +1,16 @@
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__
+media
+
+# Python # 
+*.py[cod] 
+*$py.class 
+
+# Environments 
+*portfl_env
+
+# VS Code # 
+.vscode/* 

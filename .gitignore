@@ -10,7 +10,7 @@ media
 *$py.class 
 
 # Environments 
-*portfl_env
+*venv
 
 # VS Code # 
-.vscode/* 
+.vscode/*

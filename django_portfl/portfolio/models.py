@@ -6,7 +6,7 @@ class Project(models.Model):
     description = models.CharField('Project Description', max_length=254)
     image = models.ImageField(
         'Project Image',
-        upload_to=None,
+        upload_to='portfolio/static/images/',
     )
     url_demo = models.URLField('Url Demo', blank=True)
     url_source = models.URLField('Url Source', blank=True)

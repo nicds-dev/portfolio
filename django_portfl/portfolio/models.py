@@ -8,7 +8,8 @@ class Project(models.Model):
         'Project Image',
         upload_to=None,
     )
-    url = models.URLField('Project Url', blank=True)
+    url_demo = models.URLField('Url Demo', blank=True)
+    url_source = models.URLField('Url Source', blank=True)
 
     class Meta:
         verbose_name = 'Project'

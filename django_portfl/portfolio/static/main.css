@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(16, 38, 82);
+    background-color: rgb(0, 18, 53);
 }
 /*
 .navbar-blur {
@@ -8,9 +8,15 @@ body {
     
 }
 */
+.border-blue {
+    border-bottom-color: rgb(30, 144, 255) !important;
+}
+.text-blue {
+    color: #1e90ff;
+}
 @media (max-width: 992px) {
     .sidebar {
-        background-color: rgba(255, 255, 255, 0.15);
-        backdrop-filter: blur(10px);
+        background-color: rgba(0, 18, 53, 0.15);
+        backdrop-filter: blur(8px);
     }
 }

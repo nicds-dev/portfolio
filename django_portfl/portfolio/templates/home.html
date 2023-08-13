@@ -13,7 +13,7 @@
     <nav class="navbar navbar-blur navbar-expand-lg navbar-dark bg-transparent fixed-top border-bottom border-blue">
         <div class="container pt-2">
             <!-- Name/Logo -->
-            <a class="navbar-brand fw-bold fs-4" href="#">nicds.<span class="text-blue">dev</span></a>
+            <a class="navbar-brand fw-bold fs-4 ps-3" href="#">nicds.<span class="text-blue">dev</span></a>
             <!-- Toggle Button -->
             <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -44,15 +44,22 @@
         </div>
     </nav>
     <main>
-        <section class="container vh-100 pt-6 text-white d-flex flex-column justify-content-center align-items-center gap-1">
-            <h1>Hi, I'm <span class="text-blue">Nicolás</span></h1>
-            <h3>Backend Developer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div class="flex-row">
-                <a href="#" class="btn btn-info">Download CV</a>
-                <a href="#" class="btn btn-info">LinkedIn</a>
-                <a href="#" class="btn btn-info">GitHub</a>
+
+        <section class="container w-60 vh-100 pt-6 text-white d-flex align-items-center gap-1">
+            <div class="col-md-7">
+                <h1>Hi, I'm <span class="text-blue">Nicolás</span></h1>
+                <h3>Backend Developer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="flex-row">
+                    <a href="#" class="btn btn-info">Download CV</a>
+                    <a href="#" class="btn btn-info">LinkedIn</a>
+                    <a href="#" class="btn btn-info">GitHub</a>
+                </div>
             </div>
+            <div class="col-md-5">
+                <img src="../media/portfolio/images/perfil.png" alt="" class="img-fluid rounded-circle">
+            </div>
+            
         </section>
         <section class="container vh-100 pt-6 text-white d-flex flex-column justify-content-center align-items-center gap-1">
             <h1>Hi, I'm <span class="text-blue">Nicolás</span></h1>
@@ -64,6 +71,7 @@
                 <a href="#" class="btn btn-info">GitHub</a>
             </div>
         </section>
+    </main>
 
     
     <!-- {% for project in projects %}

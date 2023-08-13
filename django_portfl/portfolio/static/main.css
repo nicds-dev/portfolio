@@ -28,3 +28,6 @@ body {
 .pt-6 {
     padding-top: 5rem !important;
 }
+.container.w-60 {
+    max-width: 60%;
+}

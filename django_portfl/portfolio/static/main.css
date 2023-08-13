@@ -1,22 +1,30 @@
 body {
     background-color: rgb(0, 18, 53);
 }
-/*
 .navbar-blur {
-    background-color: rgba(16, 38, 82, 0.15);
-    backdrop-filter: blur(10px);
+    background-color: rgba(0, 10, 29, .40) !important;
+    backdrop-filter: blur(8px);
     
 }
-*/
 .border-blue {
-    border-bottom-color: rgb(30, 144, 255) !important;
+    border-bottom-color: rgb(93, 164, 255) !important;
 }
 .text-blue {
-    color: #1e90ff;
+    color: rgb(93, 164, 255);
 }
 @media (max-width: 992px) {
     .sidebar {
-        background-color: rgba(0, 18, 53, 0.15);
+        background-color: rgba(0, 18, 53, .15);
         backdrop-filter: blur(8px);
     }
+    /*.h-center {
+        
+    }*/
+}
+.offcanvas.offcanvas-start {
+    width: 100%;
+    height: 100vh;
+}
+.pt-6 {
+    padding-top: 5rem !important;
 }

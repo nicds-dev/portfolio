@@ -10,22 +10,22 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top border-bottom border-blue">
-        <div class="container">
+    <nav class="navbar navbar-blur navbar-expand-lg navbar-dark bg-transparent fixed-top border-bottom border-blue">
+        <div class="container pt-2">
             <!-- Name/Logo -->
-            <a class="navbar-brand fw-bold" href="#">nicds.<span class="text-blue">dev</span></a>
+            <a class="navbar-brand fw-bold fs-4" href="#">nicds.<span class="text-blue">dev</span></a>
             <!-- Toggle Button -->
             <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- SideBar -->
-            <div class="container sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header text-white">
+            <div class="sidebar offcanvas offcanvas-start p-2" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="container offcanvas-header text-white">
                     <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">nicds.<span class="text-blue">dev</span></h5>
                     <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body d-flex flex-colum align-items-center">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 fw-semibold">
+                <div class="container offcanvas-body d-flex align-items-center">
+                    <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 fw-semibold fs-5">
                         <li class="nav-item mx-2">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
@@ -44,6 +44,26 @@
         </div>
     </nav>
     <main>
+        <section class="container vh-100 pt-6 text-white d-flex flex-column justify-content-center align-items-center gap-1">
+            <h1>Hi, I'm <span class="text-blue">Nicolás</span></h1>
+            <h3>Backend Developer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="flex-row">
+                <a href="#" class="btn btn-info">Download CV</a>
+                <a href="#" class="btn btn-info">LinkedIn</a>
+                <a href="#" class="btn btn-info">GitHub</a>
+            </div>
+        </section>
+        <section class="container vh-100 pt-6 text-white d-flex flex-column justify-content-center align-items-center gap-1">
+            <h1>Hi, I'm <span class="text-blue">Nicolás</span></h1>
+            <h3>Backend Developer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="flex-row">
+                <a href="#" class="btn btn-info">Download CV</a>
+                <a href="#" class="btn btn-info">LinkedIn</a>
+                <a href="#" class="btn btn-info">GitHub</a>
+            </div>
+        </section>
 
     
     <!-- {% for project in projects %}

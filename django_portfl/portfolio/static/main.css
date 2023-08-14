@@ -1,6 +1,12 @@
 body {
     background-color: rgb(0, 18, 53);
 }
+section.section-dark {
+    background: linear-gradient(135deg, #001235 50%, #001844);
+}
+section.section-blue-gray {
+    background-color: #001844;
+}
 .navbar-blur {
     background-color: rgba(0, 10, 29, .40) !important;
     backdrop-filter: blur(8px);
@@ -12,14 +18,20 @@ body {
 .text-blue {
     color: rgb(93, 164, 255);
 }
+.btn-social {
+    background-color: #5DA4FF;
+    outline: 3px #5DA4FF solid;
+    outline-offset: -3px;
+    transition: 400ms;
+    margin-inline: 0.2rem;
+}
 @media (max-width: 992px) {
     .sidebar {
         background-color: rgba(0, 18, 53, .15);
         backdrop-filter: blur(8px);
+    }.btn-social {
+        margin-inline: 0rem;
     }
-    /*.h-center {
-        
-    }*/
 }
 .offcanvas.offcanvas-start {
     width: 100%;

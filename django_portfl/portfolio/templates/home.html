@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="{% static 'main.css' %}" rel="stylesheet">
 </head>
 <body>
@@ -45,13 +46,32 @@
     </nav>
     <main>
 
-        <section class="container vh-100 pt-6 text-white d-flex align-items-center">
-            <div class="row p-4 align-items-center gap-5">
-                <div class="col-lg-7 order-2 order-lg-1 text-lg-start text-center ps-lg-4 ps-xxl-5">
-                    <h1>Hi, I'm <span class="text-blue">Nicolás</span></h1>
-                    <h3>Backend Developer</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <div class="flex-row">
+        <section class="section-dark vh-100 pt-6 text-white d-flex align-items-center">
+            <div class="container mx-auto row p-4 align-items-center gap-5">
+                <div class="col-lg-7 order-2 order-lg-1 text-lg-start text-center ps-lg-4 ps-xxl-5 d-flex flex-column gap-1">
+                    <h1>Hi, I'm <span class="fw-bold text-blue">Nicolás</span></h1>
+                    <h2 class="fw-bold fs-1"><span class="text-blue">Backend</span> Developer</h2>
+                    <p class="fs-5">Optimizing the experience behind the screen.</p>
+                    <div class="">
+                        <a href="#" class="btn btn-social fw-semibold"><i class="bi bi-file-earmark-arrow-down-fill"></i> CV</a>
+                        <a href="#" class="btn btn-social fw-semibold"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                        <a href="#" class="btn btn-social fw-semibold"><i class="bi bi-github"></i> GitHub</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8 order-1 mx-auto">
+                    <img src="../media/portfolio/images/perfil.png" alt="" class="img-fluid rounded-circle p-lg-1 p-xl-3">
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-blue-gray vh-100 pt-6 text-white d-flex align-items-center">
+            <div class="container mx-auto row p-4 align-items-center gap-5">
+                <div class="col-lg-7 order-2 order-lg-1 text-lg-start text-center ps-lg-4 ps-xxl-5 d-flex flex-column gap-1">
+                    <h1>Hi, I'm <span class="fw-bold text-blue">Nicolás</span></h1>
+                    <h2 class="fw-bold fs-1"><span class="text-blue">Backend</span> Developer</h2>
+                    <p class="fs-5">Optimizing the experience behind the screen.</p>
+                    <div class="">
                         <a href="#" class="btn btn-info">Download CV</a>
                         <a href="#" class="btn btn-info">LinkedIn</a>
                         <a href="#" class="btn btn-info">GitHub</a>
@@ -62,16 +82,6 @@
                 </div>
             </div>
 
-        </section>
-        <section class="container vh-100 pt-6 text-white d-flex flex-column justify-content-center align-items-center gap-1">
-            <h1>Hi, I'm <span class="text-blue">Nicolás</span></h1>
-            <h3>Backend Developer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div class="flex-row">
-                <a href="#" class="btn btn-info">Download CV</a>
-                <a href="#" class="btn btn-info">LinkedIn</a>
-                <a href="#" class="btn btn-info">GitHub</a>
-            </div>
         </section>
     </main>
 

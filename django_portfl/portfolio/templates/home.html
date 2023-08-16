@@ -45,59 +45,11 @@
         </div>
     </nav>
     <main>
-
-        <section class="section-dark vh-100 pt-6 text-white d-flex align-items-center">
-            <div class="container mx-auto row p-4 align-items-center gap-5">
-                <div class="col-lg-7 order-2 order-lg-1 text-lg-start text-center ps-lg-4 ps-xxl-5 d-flex flex-column gap-1">
-                    <h1>Hi, I'm <span class="fw-bold text-blue">Nicolás</span></h1>
-                    <h2 class="fw-bold fs-1"><span class="text-blue">Backend</span> Developer</h2>
-                    <p class="fs-5">Optimizing the experience behind the screen.</p>
-                    <div class="">
-                        <a href="#" class="btn btn-social fw-semibold"><i class="bi bi-file-earmark-arrow-down-fill"></i> CV</a>
-                        <a href="#" class="btn btn-social fw-semibold"><i class="bi bi-linkedin"></i> LinkedIn</a>
-                        <a href="#" class="btn btn-social fw-semibold"><i class="bi bi-github"></i> GitHub</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-8 order-1 mx-auto">
-                    <img src="../media/portfolio/images/perfil.png" alt="" class="img-fluid rounded-circle p-lg-1 p-xl-3">
-                </div>
-            </div>
-
-        </section>
-
-        <section class="section-blue-gray vh-100 pt-6 text-white d-flex align-items-center">
-            <div class="container mx-auto row p-4 align-items-center gap-5">
-                <div class="col-lg-7 order-2 order-lg-1 text-lg-start text-center ps-lg-4 ps-xxl-5 d-flex flex-column gap-1">
-                    <h1>Hi, I'm <span class="fw-bold text-blue">Nicolás</span></h1>
-                    <h2 class="fw-bold fs-1"><span class="text-blue">Backend</span> Developer</h2>
-                    <p class="fs-5">Optimizing the experience behind the screen.</p>
-                    <div class="">
-                        <a href="#" class="btn btn-info">Download CV</a>
-                        <a href="#" class="btn btn-info">LinkedIn</a>
-                        <a href="#" class="btn btn-info">GitHub</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-8 order-1 mx-auto">
-                    <img src="../media/portfolio/images/perfil.png" alt="" class="img-fluid rounded-circle">
-                </div>
-            </div>
-
-        </section>
+        {% include 'section_home.html' %}
+        {% include 'about.html' %}
+        {% include 'projects.html' %}
+        {% include 'contact.html' %}
     </main>
-
-    
-    <!-- {% for project in projects %}
-        <div>
-            <h2>{{ project.title }}</h2>
-            <p>{{ project.description }}</p>
-            <img class="img-fluid" src="{{ project.image.url }}" alt="{{ project.title }}">
-            {% if project.url_demo and project.url_source %}
-                <a href="{{ project.url_demo }}" target="_blank">demo</a>
-                <a href="{{ project.url_source }}" target="_blank">source</a>
-            {% endif %}
-        </div>
-    {% endfor %} -->
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>

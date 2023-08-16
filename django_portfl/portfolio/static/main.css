@@ -2,10 +2,10 @@ body {
     background-color: rgb(0, 18, 53);
 }
 section.section-dark {
-    background: linear-gradient(135deg, #001235 50%, #001844);
+    background: linear-gradient(135deg, #001235 50%, #071d44);
 }
 section.section-blue-gray {
-    background-color: #001844;
+    background-color: #071d44;
 }
 .navbar-blur {
     background-color: rgba(0, 10, 29, .40) !important;
@@ -18,12 +18,31 @@ section.section-blue-gray {
 .text-blue {
     color: rgb(93, 164, 255);
 }
+.p-text-color {
+    color: #BFC2C9;
+}
+.title-second {
+    font-size: 2.125rem;
+}
+.box-skill {
+    width: 5.4rem;
+    height: 6rem;
+    box-shadow: 0px 2px 18px #001235;
+}
+.icon-skill {
+    width: 2.6rem;
+}
 .btn-social {
     background-color: #5DA4FF;
     outline: 3px #5DA4FF solid;
     outline-offset: -3px;
     transition: 400ms;
     margin-inline: 0.2rem;
+}
+@media (min-width: 1400px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1140px;
+    }
 }
 @media (max-width: 992px) {
     .sidebar {
@@ -37,6 +56,10 @@ section.section-blue-gray {
     width: 100%;
     height: 100vh;
 }
+/* Extra Bootstrap */
 .pt-6 {
     padding-top: 5.4rem !important;
+}
+.fs-6 {
+    font-size: 1.125rem !important;
 }

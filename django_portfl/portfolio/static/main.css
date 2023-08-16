@@ -5,7 +5,7 @@ section.section-dark {
     background: linear-gradient(135deg, #001235 50%, #071d44);
 }
 section.section-blue-gray {
-    background-color: #071d44;
+    background-color: #0c234d;
 }
 .navbar-blur {
     background-color: rgba(0, 10, 29, .40) !important;
@@ -27,7 +27,7 @@ section.section-blue-gray {
 .box-skill {
     width: 5.4rem;
     height: 6rem;
-    box-shadow: 0px 2px 18px #001235;
+    box-shadow: 0px 2px 18px #001235c2;
 }
 .icon-skill {
     width: 2.6rem;
@@ -39,6 +39,7 @@ section.section-blue-gray {
     transition: 400ms;
     margin-inline: 0.2rem;
 }
+/* Extra Bootstrap */
 @media (min-width: 1400px){
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         max-width: 1140px;
@@ -51,12 +52,19 @@ section.section-blue-gray {
     }.btn-social {
         margin-inline: 0rem;
     }
+    .w-img-70 {
+        max-width: 70%;
+    }
+}
+@media (max-width: 576px) {
+    .container, .container-sm {
+        max-width: 98%;
+    }
 }
 .offcanvas.offcanvas-start {
     width: 100%;
     height: 100vh;
 }
-/* Extra Bootstrap */
 .pt-6 {
     padding-top: 5.4rem !important;
 }

@@ -1,10 +1,10 @@
 <section id="projects" class="section-dark py-6 text-white">
-    <div class="container d-flex flex-column pt-4 gap-3">
+    <div class="container d-flex flex-column pt-4 gap-5">
         <h2 class="title-second fw-bold text-center">Projects<span class="text-blue"></span></h2>
         <div class="container-fluid d-flex flex-wrap gap-5">
             {% for project in projects %}
                 <div class="col d-flex flex-column gap-2 border rounded p-3">
-                    <h3 class="fs-4 fw-semibold">{{ project.title }}</h3>
+                    <h3 class="fs-5 fw-bold">{{ project.title }}</h3>
                     <img class="img-fluid rounded" src="{{ project.image.url }}" alt="{{ project.title }}">
                     <p>{{ project.description }}</p>
                     {% if project.url_demo and project.url_source %}

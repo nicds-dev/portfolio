@@ -1,6 +1,17 @@
-<section id="contact" class="section-blue-gray py-6 text-white d-flex align-items-center">
-    <div class="container mx-auto row p-4 align-items-center gap-3">
-        <h2 class="fs-1 fw-bold">Contact <span class="text-blue">Me</span></h2>
-        <p class="fs-6">Colombian Computer Engineer, focused on the world of web development, especially in the backend.s</p>
+<section id="contact" class="section-blue-gray py-6 text-white">
+    <div class="container d-flex flex-column px-4 pt-4 gap-3">
+        <h2 class="title-second fw-bold">Contact <span class="text-blue">Me</span></h2>
+        <p class="fw-semibold p-text-color">Colombian Computer Engineer, focused on the world of web development, especially in the backend.</p>
+        <h3 class="fw-bold fs-4"><span class="text-blue">My</span> Skills</h3>
+    </div>
+    <div class="container py-3 px-4 pb-4 d-flex justify-content-center justify-content-lg-start flex-wrap gap-3">
+        {% include 'skills.html' with skill_name="Python" skill_src="python" src_alt="Python SVG" %}
+        {% include 'skills.html' with skill_name="Django" skill_src="django/058e05" src_alt="Django SVG" %}
+        {% include 'skills.html' with skill_name="PostgreSQL" skill_src="postgresql" src_alt="Postgresql SVG" %}
+        {% include 'skills.html' with skill_name="Postman" skill_src="postman" src_alt="Postman SVG" %}
+        {% include 'skills.html' with skill_name="JavaScript" skill_src="javascript" src_alt="JavaScript SVG" %}
+        {% include 'skills.html' with skill_name="HTML" skill_src="html5" src_alt="HTML SVG" %}
+        {% include 'skills.html' with skill_name="CSS" skill_src="css3" src_alt="CSS SVG" %}
+        {% include 'skills.html' with skill_name="Bootstrap" skill_src="bootstrap/8812FC" src_alt="Bootstrap SVG" %}
     </div>
 </section>

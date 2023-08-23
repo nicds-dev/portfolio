@@ -1,31 +1,35 @@
 <section id="projects" class="section-dark py-6 text-white">
     <div class="container d-flex flex-column pt-4 gap-5">
         <h2 class="title-second fw-bold text-center">Projects<span class="text-blue"></span></h2>
-        <div class="container-fluid d-flex flex-wrap gap-5">
-            {% for project in projects %}
-                <div class="col d-flex flex-column gap-2 box-project rounded p-3">
-                    <h3 class="fs-5 fw-bold text-blue">{{ project.title }}</h3>
-                    <img class="img-fluid rounded" src="{{ project.image.url }}" alt="{{ project.title }}">
-                    <div class="d-flex flex-wrap justify-content-center column-gap-3 row-gap-2">
-                        {% for tag in project.tags.all %}
-                            <div class="box-skill-tag rounded-3 d-flex flex-column justify-content-center align-items-center">
-                                <span class="fw-semibold">{{ tag }}</span>
-                            </div>
-                        {% endfor %}
-                    </div>
-                    <p class="fw-semibold p-text-color mt-auto">{{ project.description }}</p>
-                    {% if project.url_demo and project.url_source %}
-                        <div class="d-flex gap-3 ms-auto">
-                            <a href="{{ project.url_demo }}" target="_blank">
-                                <i class="bi bi-box-arrow-up-right icon-project"></i>
-                            </a>
-                            <a href="{{ project.url_source }}" target="_blank">
-                                <i class="bi bi-github icon-project"></i>
-                            </a>
+        <div class="container">
+            <div class="row g-5 justify-content-center">
+                {% for project in projects %}
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="h-100 d-flex flex-column gap-2 box-project rounded p-3">
+                        <h3 class="fs-5 fw-bold text-blue">{{ project.title }}</h3>
+                        <img class="img-fluid rounded" src="{{ project.image.url }}" alt="{{ project.title }}">
+                        <div class="d-flex flex-wrap justify-content-center column-gap-3 row-gap-2">
+                            {% for tag in project.tags.all %}
+                                <div class="box-skill-tag rounded-3 d-flex flex-column justify-content-center align-items-center">
+                                    <span class="fw-semibold">{{ tag }}</span>
+                                </div>
+                            {% endfor %}
                         </div>
-                    {% endif %}
+                        <p class="fw-semibold p-text-color mt-4">{{ project.description }}</p>
+                        {% if project.url_demo and project.url_source %}
+                            <div class="d-flex gap-3 ms-auto mt-auto">
+                                <a href="{{ project.url_demo }}" target="_blank">
+                                    <i class="bi bi-box-arrow-up-right icon-project"></i>
+                                </a>
+                                <a href="{{ project.url_source }}" target="_blank">
+                                    <i class="bi bi-github icon-project"></i>
+                                </a>
+                            </div>
+                        {% endif %}
+                    </div>
                 </div>
-            {% endfor %}
+                {% endfor %}
+            </div>
         </div>
     </div>
 </section>

@@ -57,6 +57,9 @@ section.section-blue-gray {
 .icon-skill {
     width: 2.6rem;
 }
+.icon-bold::before {
+    font-weight: bold !important;
+}
 .icon-project::before {
     font-size: 1.5rem;
     font-weight: bold !important;

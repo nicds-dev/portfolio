@@ -4,23 +4,23 @@
         <div class="container-fluid d-flex flex-wrap gap-5">
             {% for project in projects %}
                 <div class="col d-flex flex-column gap-2 box-project rounded p-3">
-                    <h3 class="fs-5 fw-bold">{{ project.title }}</h3>
+                    <h3 class="fs-5 fw-bold text-blue">{{ project.title }}</h3>
                     <img class="img-fluid rounded" src="{{ project.image.url }}" alt="{{ project.title }}">
-                    <div class="d-flex flex-wrap justify-content-center gap-1">
+                    <div class="d-flex flex-wrap justify-content-center column-gap-3 row-gap-2">
                         {% for tag in project.tags.all %}
                             <div class="box-skill-tag rounded-3 d-flex flex-column justify-content-center align-items-center">
-                                <span class="p-text-color">{{ tag }}</span>
+                                <span class="fw-semibold">{{ tag }}</span>
                             </div>
                         {% endfor %}
                     </div>
                     <p class="fw-semibold p-text-color mt-auto">{{ project.description }}</p>
                     {% if project.url_demo and project.url_source %}
-                        <div class="d-flex  gap-3 ms-auto">
-                            <a href="http://127.0.0.1:8000/" class="btn btn-social fw-semibold" target="_blank">
-                                <i class="bi bi-box-arrow-up-right"></i>
+                        <div class="d-flex gap-3 ms-auto">
+                            <a href="{{ project.url_demo }}" target="_blank">
+                                <i class="bi bi-box-arrow-up-right icon-project"></i>
                             </a>
-                            <a href="http://127.0.0.1:8000/" class="btn btn-social fw-semibold" target="_blank">
-                                <i class="bi bi-github"></i>
+                            <a href="{{ project.url_source }}" target="_blank">
+                                <i class="bi bi-github icon-project"></i>
                             </a>
                         </div>
                     {% endif %}

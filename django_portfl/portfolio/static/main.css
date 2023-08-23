@@ -51,11 +51,19 @@ section.section-blue-gray {
     transition-duration: .15s;
 }
 .box-project:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
     background-color: #102146;
 }
 .icon-skill {
     width: 2.6rem;
+}
+.icon-project::before {
+    font-size: 1.5rem;
+    font-weight: bold !important;
+    color: rgb(93, 190, 255);
+}
+.icon-project:hover::before {
+    color: white;
 }
 .btn-social {
     background-color: rgb(93, 190, 255);

@@ -1,5 +1,7 @@
 body {
     background-color: rgb(1, 16, 47);
+    overflow: auto !important;
+    padding-right: 0px !important;
 }
 section.section-dark {
     background: linear-gradient(135deg, #01102f 50%, #071d44);
@@ -54,7 +56,7 @@ section.section-blue-gray {
 }
 .btn-social {
     background-color: rgb(93, 190, 255);
-    outline: 3px rgb(93, 190, 255) solid;
+    outline: 3px rgb(93, 190, 255) solid !important;
     outline-offset: -3px;
     transition: 400ms;
     margin-inline: 0.2rem;

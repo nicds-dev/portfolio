@@ -25,7 +25,6 @@ def home(request):
                 success = True
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
-    else:
-        form = ContactForm()
+    form = ContactForm()
 
     return render(request, 'home.html', {'projects': projects, 'form': form, 'success': success})

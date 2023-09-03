@@ -1,16 +1,18 @@
-# Django #
+.env
+
+# Django 
 *.log
 *.pot
 *.pyc
 __pycache__
 media
 
-# Python # 
+# Python 
 *.py[cod] 
 *$py.class 
 
 # Environments 
 *venv
 
-# VS Code # 
+# VS Code 
 .vscode/*

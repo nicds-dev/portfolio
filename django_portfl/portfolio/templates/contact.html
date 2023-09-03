@@ -1,17 +1,43 @@
 <section id="contact" class="section-blue-gray py-6 text-white">
-    <div class="container d-flex flex-column px-4 pt-4 gap-3">
-        <h2 class="title-second fw-bold">Contact <span class="text-blue">Me</span></h2>
-        <p class="fw-semibold p-text-color">Colombian Computer Engineer, focused on the world of web development, especially in the backend.</p>
-        <h3 class="fw-bold fs-4"><span class="text-blue">My</span> Skills</h3>
-    </div>
-    <div class="container py-3 px-4 pb-4 d-flex justify-content-center justify-content-lg-start flex-wrap gap-3">
-        {% include 'skills.html' with skill_name="Python" skill_src="python" src_alt="Python SVG" %}
-        {% include 'skills.html' with skill_name="Django" skill_src="django/058e05" src_alt="Django SVG" %}
-        {% include 'skills.html' with skill_name="PostgreSQL" skill_src="postgresql" src_alt="Postgresql SVG" %}
-        {% include 'skills.html' with skill_name="Postman" skill_src="postman" src_alt="Postman SVG" %}
-        {% include 'skills.html' with skill_name="JavaScript" skill_src="javascript" src_alt="JavaScript SVG" %}
-        {% include 'skills.html' with skill_name="HTML" skill_src="html5" src_alt="HTML SVG" %}
-        {% include 'skills.html' with skill_name="CSS" skill_src="css3" src_alt="CSS SVG" %}
-        {% include 'skills.html' with skill_name="Bootstrap" skill_src="bootstrap/8812FC" src_alt="Bootstrap SVG" %}
+    <div class="container p-4">
+        <div class="row g-5">
+            <div class="col-12 col-lg-6 d-flex flex-column align-self-center text-lg-start text-center mt-lg-0 gap-3">
+                <h2 class="title-second fw-bold">Contact <span class="text-blue">Me</span></h2>
+                <p class="fw-semibold p-text-color">I'm just a few clicks away. How can I contribute to your goals?</p>
+                <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-2 gap-lg-3">
+                    <a href="mailto:nikolasdurango@gmail.com" class="btn btn-social fw-semibold" target="_blank"><i class="bi bi-envelope"></i> Email</a>
+                    <a href="https://www.linkedin.com/in/nicolasdurs/" class="btn btn-social fw-semibold" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/DevNickDs" class="btn btn-social fw-semibold" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end">
+                <form action="" method="POST">
+                    <em class="fw-semibold p-text-color">Or you can leave me a <span class="text-blue">message</span>:</em>
+                    {% csrf_token %}
+                    {% for field in form %}
+                        <div class="my-3">
+                            {{ field }}
+                        </div>
+                    {% endfor %}
+                    <div class="my-3 text-end">
+                        <button type="submit" class="btn btn-social fw-semibold px-3">
+                            <span>Send Message</span>
+                        </button>
+                    </div>
+                </form>
+                {% if success %}
+                    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                    <script>
+                        Swal.fire({
+                            title: 'Great! Message sent',
+                            icon: 'success',
+                            iconColor: '#5DBEFF',
+                            showConfirmButton: false,
+                            timer: 2200
+                        })
+                    </script>
+                {% endif %}
+            </div>
+        </div>
     </div>
 </section>

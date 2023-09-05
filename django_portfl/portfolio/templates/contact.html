@@ -5,9 +5,9 @@
                 <h2 class="title-second fw-bold">Contact <span class="text-blue">Me</span></h2>
                 <p class="fw-semibold p-text-color">I'm just a few clicks away. How can I contribute to your goals?</p>
                 <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-2 gap-lg-3">
-                    <a href="mailto:nikolasdurango@gmail.com" class="btn btn-social fw-semibold" target="_blank"><i class="bi bi-envelope"></i> Email</a>
-                    <a href="https://www.linkedin.com/in/nicolasdurs/" class="btn btn-social fw-semibold" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
-                    <a href="https://github.com/DevNickDs" class="btn btn-social fw-semibold" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+                    <a href="mailto:{{ user.email }}" class="btn btn-social fw-semibold" target="_blank"><i class="bi bi-envelope"></i> Email</a>
+                    <a href="{{ user.linkedin }}" class="btn btn-social fw-semibold" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                    <a href="{{ user.github }}" class="btn btn-social fw-semibold" target="_blank"><i class="bi bi-github"></i> GitHub</a>
                 </div>
             </div>
             <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end">

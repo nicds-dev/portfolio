@@ -5,13 +5,13 @@
             <h2 class="fw-bold fs-1"><span class="text-blue">Backend</span> Developer</h2>
             <em class="fs-5 mb-3">Optimizing the experience behind the screen.</em>
             <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-2 gap-lg-3">
-                <a href="#" class="btn btn-social fw-semibold" target="_blank"><i class="bi bi-download icon-bold"></i> CV</a>
-                <a href="https://www.linkedin.com/in/nicolasdurs/" class="btn btn-social fw-semibold" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
-                <a href="https://github.com/DevNickDs" class="btn btn-social fw-semibold" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+                <a href="{{ user.cv.url }}" class="btn btn-social fw-semibold" target="_blank"><i class="bi bi-download icon-bold"></i> CV</a>
+                <a href="{{ user.linkedin }}" class="btn btn-social fw-semibold" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                <a href="{{ user.github }}" class="btn btn-social fw-semibold" target="_blank"><i class="bi bi-github"></i> GitHub</a>
             </div>
         </article>
         <div class="col-lg-4 col-md-8 order-1 text-center mx-auto">
-            <img src="../media/portfolio/images/perfil.png" alt="" class="img-fluid w-img-70 rounded-circle">
+            <img src="{{ user.image.url }}" alt="" class="img-fluid w-img-70 rounded-circle">
         </div>
     </div>
 </section>

@@ -31,8 +31,9 @@ section.section-blue-gray {
     background-color: #24385B;
 }
 .box-project {
-    box-shadow: 0px 2px 10px #071d4438;
+    box-shadow: 2px 2px 10px #24385B;
     background-color: #071d44;
+    border: 2px rgb(93, 190, 255) solid;
     transition-property: all;
     transition-duration: .15s;
 }
@@ -64,6 +65,55 @@ section.section-blue-gray {
 }
 .no-box-shadow {
     box-shadow: none !important;
+}
+/*----------------------------------
+            Animation
+------------------------------------*/
+@keyframes bounce {
+    0% {
+        transform:translate(0)
+    }
+    50% {
+        transform:translatey(3px)
+    }
+    to {
+        transform:translate(0)
+    }
+}
+.icon-bounce::before {
+    animation: bounce 1.5s ease-in-out infinite;
+    color: rgb(93, 190, 255);
+    font-weight: bold !important;
+}
+.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+.logo:nth-child(2) {
+    transition-delay: 25ms;
+}
+.logo:nth-child(3) {
+    transition-delay: 50ms;
+}
+.logo:nth-child(4) {
+    transition-delay: 75ms;
+}
+.logo:nth-child(5) {
+    transition-delay: 100ms;
+}
+.logo:nth-child(6) {
+    transition-delay: 125ms;
+}
+.logo:nth-child(7) {
+    transition-delay: 150ms;
+}
+.logo:nth-child(8) {
+    transition-delay: 175ms;
 }
 /*----------------------------------
             Styles Scrollbar

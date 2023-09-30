@@ -1,14 +1,14 @@
 from django.db import models
-
+from django.utils.translation import gettext_lazy as _
 
 class UserProfile(models.Model):
-    name = models.CharField('User Name', max_length=80)
+    name = models.CharField(_('User Name'), max_length=80)
     email = models.EmailField('Email')
     image = models.ImageField(
-        'Profile Image', upload_to='portfolio/images/',
+        _('Profile Image'), upload_to='portfolio/images/',
     )
     cv = models.FileField(
-        'CV File', upload_to='portfolio/files/',
+        _('CV File'), upload_to='portfolio/files/',
     )
     linkedin = models.URLField('Linkedin', blank=True)
     github = models.URLField('Github', blank=True)
@@ -21,15 +21,15 @@ class UserProfile(models.Model):
         return self.name
 
 class Project(models.Model):
-    title = models.CharField('Project Title', max_length=150)
-    description = models.CharField('Project Description', max_length=254)
+    title = models.CharField(_('Project Title'), max_length=150)
+    description = models.CharField(_('Project Description'), max_length=254)
     image = models.ImageField(
-        'Project Image',
+        _('Project Image'),
         upload_to='portfolio/images/',
     )
     tags = models.ManyToManyField('Tag')
-    url_demo = models.URLField('Url Demo', blank=True)
-    url_source = models.URLField('Url Source', blank=True)
+    url_demo = models.URLField(_('URL Demo'), blank=True)
+    url_source = models.URLField(_('URL Source'), blank=True)
 
     class Meta:
         verbose_name = 'Project'
@@ -39,7 +39,7 @@ class Project(models.Model):
         return self.title
 
 class Tag(models.Model):
-    name = models.CharField('Tag Name', max_length=80)
+    name = models.CharField(_('Tag Name'), max_length=80)
 
     class Meta:
         verbose_name = 'Tag'

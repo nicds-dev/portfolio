@@ -1,6 +1,7 @@
+{% load i18n %}
 <section id="projects" class="section-dark py-6 text-white">
     <div class="container d-flex flex-column pt-4 gap-5">
-        <h2 class="title-second fw-bold text-center">Projects<span class="text-blue"></span></h2>
+        <h2 class="title-second fw-bold text-center">{% trans 'Projects' %}</h2>
         <div class="container">
             <div class="row g-5">
                 {% for project in projects %}

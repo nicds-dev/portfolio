@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-29 21:53-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\django_portfl\settings.py:112
+msgid "English"
+msgstr ""
+
+#: .\django_portfl\settings.py:113
+msgid "Spanish"
+msgstr ""
+
+#: .\portfolio\forms.py:5
+msgid "Name *"
+msgstr ""
+
+#: .\portfolio\forms.py:6
+msgid "Enter your name"
+msgstr ""
+
+#: .\portfolio\forms.py:8
+msgid "Email *"
+msgstr ""
+
+#: .\portfolio\forms.py:9
+msgid "Enter your Email"
+msgstr ""
+
+#: .\portfolio\forms.py:11
+msgid "Message *"
+msgstr ""
+
+#: .\portfolio\forms.py:12
+msgid "Enter your message"
+msgstr ""
+
+#: .\portfolio\models.py:5
+msgid "User Name"
+msgstr ""
+
+#: .\portfolio\models.py:8
+msgid "Profile Image"
+msgstr ""
+
+#: .\portfolio\models.py:11
+msgid "CV File"
+msgstr ""
+
+#: .\portfolio\models.py:24
+msgid "Project Title"
+msgstr ""
+
+#: .\portfolio\models.py:25
+msgid "Project Description"
+msgstr ""
+
+#: .\portfolio\models.py:27
+msgid "Project Image"
+msgstr ""
+
+#: .\portfolio\models.py:31
+msgid "URL Demo"
+msgstr ""
+
+#: .\portfolio\models.py:32
+msgid "URL Source"
+msgstr ""
+
+#: .\portfolio\models.py:42
+msgid "Tag Name"
+msgstr ""
+
+#: .\portfolio\templates\about.html:4
+msgid "About <span class=\"text-blue\">Me"
+msgstr ""
+
+#: .\portfolio\templates\about.html:5
+msgid ""
+"Colombian Computer Engineer, focused on the world of web development, "
+"especially in the backend. \n"
+"            My training has been a path of constant exploration and "
+"learning, this has led me to delve into various technologies and "
+"methodologies. \n"
+"            Dedicated to providing efficient and reliable solutions in the "
+"ever-evolving world of web development."
+msgstr ""
+
+#: .\portfolio\templates\about.html:8
+msgid "My</span> Skills"
+msgstr ""
+
+#: .\portfolio\templates\contact.html:6
+msgid "Contact <span class=\"text-blue\">Me"
+msgstr ""
+
+#: .\portfolio\templates\contact.html:7
+msgid ""
+"I'm just a few clicks away. How can I contribute to your goals?\n"
+"                    <br>You can contact me through my socials. "
+msgstr ""
+
+#: .\portfolio\templates\contact.html:18
+msgid "Or you can leave me a <span class=\"text-blue\">message"
+msgstr ""
+
+#: .\portfolio\templates\contact.html:27
+msgid "Send Message"
+msgstr ""
+
+#: .\portfolio\templates\home.html:8
+msgid "nicds | Portfolio"
+msgstr ""
+
+#: .\portfolio\templates\home.html:34
+msgid "Home"
+msgstr ""
+
+#: .\portfolio\templates\home.html:37
+msgid "About"
+msgstr ""
+
+#: .\portfolio\templates\home.html:40 .\portfolio\templates\projects.html:4
+msgid "Projects"
+msgstr ""
+
+#: .\portfolio\templates\home.html:43
+msgid "Contact"
+msgstr ""
+
+#: .\portfolio\templates\home.html:58
+msgid "Created by "
+msgstr ""
+
+#: .\portfolio\templates\section_home.html:5
+msgid "Hi, I'm "
+msgstr ""
+
+#: .\portfolio\templates\section_home.html:7
+msgid "Optimizing the experience behind the screen."
+msgstr ""

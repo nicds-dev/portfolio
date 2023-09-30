@@ -1,10 +1,11 @@
+{% load i18n %}
 <section id="contact" class="section-blue-gray py-6 text-white">
     <div class="container p-4">
         <div class="row g-5">
             <div class="col-12 col-lg-6 d-flex flex-column align-self-center text-lg-start text-center mt-lg-0 gap-3">
-                <h2 class="title-second fw-bold">Contact <span class="text-blue">Me</span></h2>
-                <p class="fw-semibold p-text-color">I'm just a few clicks away. How can I contribute to your goals?
-                    <br>You can contact me through my socials. <i class="bi bi-arrow-down icon-bounce"></i>
+                <h2 class="title-second fw-bold">{% blocktrans %}Contact <span class="text-blue">Me{% endblocktrans %}</span></h2>
+                <p class="fw-semibold p-text-color">{% blocktrans %}I'm just a few clicks away. How can I contribute to your goals?
+                    <br>You can contact me through my socials. {% endblocktrans %}<i class="bi bi-arrow-down icon-bounce"></i>
                 </p>
                 <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-2 gap-lg-3">
                     <a href="mailto:{{ user.email }}" class="btn btn-social fw-semibold" target="_blank"><i class="bi bi-envelope"></i> Email</a>
@@ -14,7 +15,7 @@
             </div>
             <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end">
                 <form action="" method="POST">
-                    <em class="fw-semibold p-text-color">Or you can leave me a <span class="text-blue">message</span>:</em>
+                    <em class="fw-semibold p-text-color">{% blocktrans %}Or you can leave me a <span class="text-blue">message{% endblocktrans %}</span>:</em>
                     {% csrf_token %}
                     {% for field in form %}
                         <div class="my-3">
@@ -23,7 +24,7 @@
                     {% endfor %}
                     <div class="my-3 text-end">
                         <button type="submit" class="btn btn-social fw-semibold px-3">
-                            <span>Send Message</span>
+                            <span>{% trans 'Send Message' %}</span>
                         </button>
                     </div>
                 </form>

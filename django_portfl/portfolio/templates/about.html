@@ -1,8 +1,11 @@
+{% load i18n %}
 <section id="about" class="section-blue-gray py-6 text-white">
     <div class="container d-flex flex-column px-4 pt-4 gap-3">
-        <h2 class="title-second fw-bold">About <span class="text-blue">Me</span></h2>
-        <p class="fw-semibold p-text-color">Colombian Computer Engineer, focused on the world of web development, especially in the backend. My training has been a path of constant exploration and learning, this has led me to delve into various technologies and methodologies. dedicated to providing efficient and reliable solutions in the ever-evolving world of web development.</p>
-        <h3 class="fw-bold fs-4"><span class="text-blue">My</span> Skills</h3>
+        <h2 class="title-second fw-bold">{% blocktrans %}About <span class="text-blue">Me{% endblocktrans %}</span></h2>
+        <p class="fw-semibold p-text-color">{% blocktrans %}Colombian Computer Engineer, focused on the world of web development, especially in the backend. 
+            My training has been a path of constant exploration and learning, this has led me to delve into various technologies and methodologies. 
+            Dedicated to providing efficient and reliable solutions in the ever-evolving world of web development.{% endblocktrans %}</p>
+        <h3 class="fw-bold fs-4"><span class="text-blue">{% blocktrans %}My</span> Skills{% endblocktrans %}</h3>
     </div>
     <div class="container py-3 px-4 pb-4 d-flex justify-content-center justify-content-lg-start flex-wrap gap-3">
         {% include 'skills.html' with skill_name="Python" skill_src="python" src_alt="Python SVG" %}

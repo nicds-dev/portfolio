@@ -1,4 +1,5 @@
 from django.contrib import admin
+from parler.admin import TranslatableAdmin
 from .models import UserProfile, Project, Tag
 
 class UserProfileAdmin(admin.ModelAdmin):
@@ -6,8 +7,7 @@ class UserProfileAdmin(admin.ModelAdmin):
 
 class ProjectAdmin(admin.ModelAdmin):
     list_display = ['title', 'description']
-    filter_horizontal = ('tags',)
 
 admin.site.register(UserProfile, UserProfileAdmin)
-admin.site.register(Project, ProjectAdmin)
+admin.site.register(Project, TranslatableAdmin)
 admin.site.register(Tag)

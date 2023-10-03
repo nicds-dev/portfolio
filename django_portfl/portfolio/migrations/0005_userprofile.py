@@ -22,8 +22,8 @@ class Migration(migrations.Migration):
                 ('github', models.URLField(blank=True, verbose_name='Github')),
             ],
             options={
-                'verbose_name': 'UserProfile',
-                'verbose_name_plural': 'UserProfiles',
+                'verbose_name': 'User Profile',
+                'verbose_name_plural': 'User Profiles',
             },
         ),
     ]

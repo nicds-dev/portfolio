@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'portfolio',
     'crispy_forms',
     'rosetta',
+    'parler',
 ]
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
@@ -106,6 +107,17 @@ AUTH_PASSWORD_VALIDATORS = [
 LOCALE_PATHS = [
     BASE_DIR / 'locale'
 ]
+
+PARLER_LANGUAGES = {
+    None: (
+        {'code': 'en',},
+        {'code': 'es',},
+    ),
+    'default': {
+        'fallbacks': ['en'],
+        'hide_untranslated': False,
+    }
+}
 
 LANGUAGE_CODE = 'en'
 

@@ -1,23 +1,5 @@
 {% load i18n %}
 <section id="home" class="section-dark min-vh-100 py-6 pb-0 text-white d-flex align-items-center">
-    <div class="container">
-
-        {% get_current_language as CURRENT_LANGUAGE %}
-        {% get_available_languages as AVAILABLE_LANGUAGES %}
-        {% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
-        <div class="languages">
-            <p>{% trans "Language" %}:</p>
-            <ul class="languages">
-            {% for language in languages %}
-                <li>
-                    <a href="/{{ language.code }}/"
-                    {% if language.code == CURRENT_LANGUAGE %} class="active"{% endif %}>
-                    {{ language.name_local }}
-                    </a>
-                </li>
-            {% endfor %}
-            </ul>
-        </div>
     <div class="container mx-auto row align-items-center gap-5">
         <article class="col-lg-7 order-2 order-lg-1 text-lg-start text-center ps-lg-3 d-flex flex-column gap-1">
             <h1 class="fw-semibold fs-2">{% trans "Hi, I'm " %}<span class="text-blue">Nicolás</span>,</h1>

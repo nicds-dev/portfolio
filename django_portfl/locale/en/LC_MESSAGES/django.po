@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-29 21:53-0500\n"
+"POT-Creation-Date: 2023-10-02 19:13-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\django_portfl\settings.py:112
+#: .\django_portfl\settings.py:125
 msgid "English"
 msgstr ""
 
-#: .\django_portfl\settings.py:113
+#: .\django_portfl\settings.py:126
 msgid "Spanish"
 msgstr ""
 
@@ -50,39 +50,56 @@ msgstr ""
 msgid "Enter your message"
 msgstr ""
 
-#: .\portfolio\models.py:5
+#: .\portfolio\models.py:6
 msgid "User Name"
 msgstr ""
 
-#: .\portfolio\models.py:8
+#: .\portfolio\models.py:9
 msgid "Profile Image"
 msgstr ""
 
-#: .\portfolio\models.py:11
+#: .\portfolio\models.py:12
 msgid "CV File"
 msgstr ""
 
-#: .\portfolio\models.py:24
+#: .\portfolio\models.py:18
+msgid "User Profile"
+msgstr ""
+
+#: .\portfolio\models.py:19
+msgid "User Profiles"
+msgstr ""
+
+#: .\portfolio\models.py:26
 msgid "Project Title"
 msgstr ""
 
-#: .\portfolio\models.py:25
+#: .\portfolio\models.py:27
 msgid "Project Description"
 msgstr ""
 
-#: .\portfolio\models.py:27
+#: .\portfolio\models.py:29
 msgid "Project Image"
 msgstr ""
 
-#: .\portfolio\models.py:31
+#: .\portfolio\models.py:33
 msgid "URL Demo"
 msgstr ""
 
-#: .\portfolio\models.py:32
+#: .\portfolio\models.py:34
 msgid "URL Source"
 msgstr ""
 
-#: .\portfolio\models.py:42
+#: .\portfolio\models.py:39
+msgid "Project"
+msgstr ""
+
+#: .\portfolio\models.py:40 .\portfolio\templates\home.html:40
+#: .\portfolio\templates\projects.html:4
+msgid "Projects"
+msgstr ""
+
+#: .\portfolio\models.py:46
 msgid "Tag Name"
 msgstr ""
 
@@ -135,10 +152,6 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-#: .\portfolio\templates\home.html:40 .\portfolio\templates\projects.html:4
-msgid "Projects"
-msgstr ""
-
 #: .\portfolio\templates\home.html:43
 msgid "Contact"
 msgstr ""
@@ -147,10 +160,14 @@ msgstr ""
 msgid "Created by "
 msgstr ""
 
-#: .\portfolio\templates\section_home.html:5
+#: .\portfolio\templates\section_home.html:9
+msgid "Language"
+msgstr ""
+
+#: .\portfolio\templates\section_home.html:23
 msgid "Hi, I'm "
 msgstr ""
 
-#: .\portfolio\templates\section_home.html:7
+#: .\portfolio\templates\section_home.html:25
 msgid "Optimizing the experience behind the screen."
 msgstr ""

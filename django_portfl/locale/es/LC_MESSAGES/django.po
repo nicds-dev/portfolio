@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-29 21:53-0500\n"
-"PO-Revision-Date: 2023-09-29 22:17+0000\n"
+"POT-Creation-Date: 2023-10-02 19:13-0500\n"
+"PO-Revision-Date: 2023-10-02 19:19+0000\n"
 "Last-Translator:   <nikolasdurango@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -19,11 +19,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.9.9\n"
 
-#: .\django_portfl\settings.py:112
+#: .\django_portfl\settings.py:125
 msgid "English"
 msgstr "Inglés"
 
-#: .\django_portfl\settings.py:113
+#: .\django_portfl\settings.py:126
 msgid "Spanish"
 msgstr "Español"
 
@@ -51,45 +51,63 @@ msgstr "Mensaje *"
 msgid "Enter your message"
 msgstr "Ingrese su mensaje"
 
-#: .\portfolio\models.py:5
+#: .\portfolio\models.py:6
 msgid "User Name"
 msgstr "Nombre de Usuario"
 
-#: .\portfolio\models.py:8
+#: .\portfolio\models.py:9
 msgid "Profile Image"
 msgstr "Imagen de Perfil"
 
-#: .\portfolio\models.py:11
+#: .\portfolio\models.py:12
 msgid "CV File"
 msgstr "Archivo CV"
 
-#: .\portfolio\models.py:24
+#: .\portfolio\models.py:18
+msgid "User Profile"
+msgstr "Perfil de Usuario"
+
+#: .\portfolio\models.py:19
+msgid "User Profiles"
+msgstr "Perfiles de Usuario"
+
+#: .\portfolio\models.py:26
 msgid "Project Title"
 msgstr "Título del Proyecto"
 
-#: .\portfolio\models.py:25
+#: .\portfolio\models.py:27
 msgid "Project Description"
 msgstr "Descripción del Proyecto"
 
-#: .\portfolio\models.py:27
+#: .\portfolio\models.py:29
 msgid "Project Image"
 msgstr "Imagen del Proyecto"
 
-#: .\portfolio\models.py:31
+#: .\portfolio\models.py:33
 msgid "URL Demo"
 msgstr "URL de Demostración"
 
-#: .\portfolio\models.py:32
+#: .\portfolio\models.py:34
 msgid "URL Source"
 msgstr "URL de Fuente"
 
-#: .\portfolio\models.py:42
+#: .\portfolio\models.py:39
+#| msgid "Projects"
+msgid "Project"
+msgstr "Proyecto"
+
+#: .\portfolio\models.py:40 .\portfolio\templates\home.html:40
+#: .\portfolio\templates\projects.html:4
+msgid "Projects"
+msgstr "Proyectos"
+
+#: .\portfolio\models.py:46
 msgid "Tag Name"
 msgstr "Nombre del Tag"
 
 #: .\portfolio\templates\about.html:4
 msgid "About <span class=\"text-blue\">Me"
-msgstr "Sobre <span class=\"text-blue\">Mi"
+msgstr "Sobre <span class=\"text-blue\">Mí"
 
 #: .\portfolio\templates\about.html:5
 msgid ""
@@ -98,7 +116,7 @@ msgid ""
 "            Dedicated to providing efficient and reliable solutions in the ever-evolving world of web development."
 msgstr ""
 "Ingeniero Informático colombiano, enfocado en el mundo del desarrollo web, especialmente en el backend. \n"
-"            Mi formación ha sido un camino de constante exploración y aprendizaje, sto me ha llevado a profundizar en diversas tecnologías y metodologías. \n"
+"            Mi formación ha sido un camino de constante exploración y aprendizaje, esto me ha llevado a profundizar en diversas tecnologías y metodologías. \n"
 "            Dedicado a brindar soluciones eficientes y confiables en el mundo en constante evolución del desarrollo web."
 
 #: .\portfolio\templates\about.html:8
@@ -135,11 +153,7 @@ msgstr "Inicio"
 
 #: .\portfolio\templates\home.html:37
 msgid "About"
-msgstr "Sobre Mi"
-
-#: .\portfolio\templates\home.html:40 .\portfolio\templates\projects.html:4
-msgid "Projects"
-msgstr "Proyectos"
+msgstr "Sobre Mí"
 
 #: .\portfolio\templates\home.html:43
 msgid "Contact"
@@ -149,10 +163,14 @@ msgstr "Contacto"
 msgid "Created by "
 msgstr "Creado por "
 
-#: .\portfolio\templates\section_home.html:5
+#: .\portfolio\templates\section_home.html:9
+msgid "Language"
+msgstr "Lenguaje"
+
+#: .\portfolio\templates\section_home.html:23
 msgid "Hi, I'm "
 msgstr "Hola, Soy "
 
-#: .\portfolio\templates\section_home.html:7
+#: .\portfolio\templates\section_home.html:25
 msgid "Optimizing the experience behind the screen."
 msgstr "Optimizando la experiencia detrás de la pantalla."

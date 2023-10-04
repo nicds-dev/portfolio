@@ -52,12 +52,12 @@
         {% include 'about.html' %}
         {% include 'projects.html' %}
         {% include 'contact.html' %}
-        <div class="position-fixed bottom-0 end-0 p-5 btn-group dropup">
+        <div class="position-fixed bottom-0 end-0 p-md-4 p-3 dropup-center dropup">
             {% get_current_language as CURRENT_LANGUAGE %}
             {% get_available_languages as AVAILABLE_LANGUAGES %}
             {% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
-            <button type="button" class="btn btn-secondary btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="bi bi-globe"></i>
+            <button type="button" class="btn btn-languages btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-globe2"></i>
             </button>
             <ul class="dropdown-menu">
                 {% for language in languages %}

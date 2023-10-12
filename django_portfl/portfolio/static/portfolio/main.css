@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: rgb(1, 16, 47);
+    overflow: auto !important;
+    padding-right: 0px !important;
+}
+
+section.section-dark {
+    background: linear-gradient(135deg, #01102f 50%, #071d44);
+}
+
+section.section-blue-gray {
+    background-color: #102146;
+}
+
+.navbar-blur {
+    background-color: rgba(1, 10, 29, .4) !important;
+    backdrop-filter: blur(8px);
+}
+
+.border-blue {
+    border-bottom-color: rgb(93, 190, 255) !important;
+}
+
+.text-blue {
+    color: rgb(93, 190, 255);
+}
+
+.p-text-color {
+    color: #d9dbe0;
+}
+
+.title-second {
+    font-size: 2.125rem;
+}
+
+.box-skill-tag {
+    width: 5.4rem;
+    box-shadow: 0px 2px 10px #24385B38;
+    background-color: #24385B;
+}
+
+.box-project {
+    box-shadow: 2px 2px 10px #24385B;
+    background-color: #071d44;
+    border: 2px rgb(93, 190, 255) solid;
+    transition-property: all;
+    transition-duration: .15s;
+}
+
+.box-project:hover {
+    transform: scale(1.03);
+    background-color: #102146;
+}
+
+.icon-skill {
+    width: 2.6rem;
+}
+
+.icon-bold::before {
+    font-weight: bold !important;
+}
+
+.icon-project::before {
+    font-size: 1.5rem;
+    font-weight: bold !important;
+    color: rgb(93, 190, 255);
+}
+
+.icon-project:hover::before {
+    color: white;
+}
+
+.btn-cv {
+    background-color: #01102f;
+    outline: 3px rgb(93, 190, 255) solid !important;
+    color: white;
+    outline-offset: -3px;
+    transition: 400ms;
+    margin-inline: 0.2rem;
+    font-size: 1.08rem;
+}
+
+.btn-cv:hover {
+    background-color: #24385B;
+}
+
+.btn-social {
+    background-color: rgb(93, 190, 255);
+    outline: 3px rgb(93, 190, 255) solid !important;
+    outline-offset: -3px;
+    transition: 400ms;
+    margin-inline: 0.2rem;
+    font-size: 1.08rem;
+}
+
+.btn-languages {
+    background-color: rgb(93, 190, 255);
+    outline: 3px rgb(93, 190, 255) solid !important;
+    outline-offset: -3px;
+    transition: 400ms;
+    margin-inline: 0.2rem;
+}
+
+.btn-languages:hover,
+.btn-languages:active,
+.btn-languages.show {
+    color: white !important;
+}
+
+.no-box-shadow {
+    box-shadow: none !important;
+}
+
+/*----------------------------------
+            Animation
+------------------------------------*/
+
+@keyframes bounce {
+    0% {
+        transform: translate(0)
+    }
+
+    50% {
+        transform: translateY(3px)
+    }
+
+    to {
+        transform: translate(0)
+    }
+}
+
+.icon-bounce::before {
+    animation: bounce 1.3s ease-in-out infinite;
+    color: rgb(93, 190, 255);
+    font-weight: bold !important;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.logo:nth-child(2) {
+    transition-delay: 25ms;
+}
+
+.logo:nth-child(3) {
+    transition-delay: 50ms;
+}
+
+.logo:nth-child(4) {
+    transition-delay: 75ms;
+}
+
+.logo:nth-child(5) {
+    transition-delay: 100ms;
+}
+
+.logo:nth-child(6) {
+    transition-delay: 125ms;
+}
+
+.logo:nth-child(7) {
+    transition-delay: 150ms;
+}
+
+.logo:nth-child(8) {
+    transition-delay: 175ms;
+}
+
+/*----------------------------------
+            Styles Scrollbar
+------------------------------------*/
+/* WebKit (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(93, 190, 255);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ccd6e133;
+}
+
+/* WebKit (Firefox) */
+* {
+    scrollbar-color: rgb(93, 190, 255) #ccd6e133;
+}
+
+/*----------------------------------
+            Extra Bootstrap
+------------------------------------*/
+@media (min-width: 1400px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1140px;
+    }
+}
+
+@media (max-width: 992px) {
+    .sidebar {
+        background-color: rgba(1, 16, 47, .15);
+        backdrop-filter: blur(8px);
+    }
+
+    .btn-social {
+        margin-inline: 0rem;
+    }
+
+    .w-img-70 {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .container,
+    .container-sm {
+        max-width: 98%;
+    }
+}
+
+.nav-link {
+    color: #d9dbe0 !important;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: rgb(93, 190, 255) !important;
+}
+
+.dropdown-menu {
+    min-width: 6rem;
+    text-align: center;
+}
+
+.dropdown-item.active,
+.dropdown-item:active,
+.dropdown-item:hover {
+    color: black;
+    background-color: lightgray;
+}
+
+.form-control {
+    padding: .7rem .75rem;
+    border: none;
+    border-bottom: 2px solid #d9dbe0;
+    background-color: #24385B;
+    color: white !important;
+}
+
+.form-control:focus {
+    border-color: rgb(93, 190, 255);
+    background-color: #33486C;
+}
+
+.form-control::placeholder {
+    color: #d9dbe0 !important;
+}
+
+.offcanvas.offcanvas-start {
+    width: 100%;
+    height: 100vh;
+}
+
+.py-6 {
+    padding-top: 5.4rem !important;
+    padding-bottom: 5.4rem;
+}
+
+.fs-6 {
+    font-size: 1.125rem !important;
+}
+
+/*----------------------------------
+            Custom SweetAlert
+------------------------------------*/
+div:where(.swal2-container) div:where(.swal2-popup) {
+    background: #33486C !important;
+    color: #d9dbe0 !important;
+}
+
+div:where(.swal2-container) h2:where(.swal2-title) {
+    padding: .8em 1em .8em !important;
+}
+
+div:where(.swal2-icon).swal2-success [class^="swal2-success-circular-line"][class$="left"],
+div:where(.swal2-icon).swal2-success .swal2-success-fix,
+div:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-circular-line-right {
+    background-color: #33486C !important;
+}

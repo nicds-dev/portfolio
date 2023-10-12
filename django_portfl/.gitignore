@@ -5,7 +5,8 @@
 *.pot
 *.pyc
 __pycache__
-media
+media/
+staticfiles/
 
 # Python 
 *.py[cod] 

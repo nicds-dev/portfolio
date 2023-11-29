@@ -4,20 +4,24 @@ This project is the first part of my personal portfolio, the other is in a priva
 
 1.- Clone this repository:
 
-                        git clone https://github.com/nicds-dev/portfolio.git 
+                            git clone https://github.com/nicds-dev/portfolio.git 
 
 2.- Create your own virtual environment :
 
-                        virtualenv name_venv or python3 -m venv name_venv 
+                            virtualenv name_venv or python3 -m venv name_venv 
 
 3.- Active virtual environment.
 
-                        name_venv\Scripts\activate or source name_venv/bin/activate 
+                            name_venv\Scripts\activate or source name_venv/bin/activate 
 
 4.- Install libraries.
 
-                        (env) pip install -r requirements.txt 
+                            (env) pip install -r requirements.txt 
 
-5.- In the project base run the command:
+5.- In the settings.py file create your own configuration for the connection to your database.
 
-                        (env) python manage.py runserver 
+6.- In the project base run the commands:
+
+                            (env) python3 manage.py makemigrations
+                            (env) python3 manage.py migrate
+                            (env) python3 manage.py runserver 

@@ -14,7 +14,7 @@ This project is the first part of my personal portfolio, the other is in a priva
 
                             name_venv\Scripts\activate or source name_venv/bin/activate 
 
-4.- Install libraries.
+4.- Go to the route "django_portfl/" and install libraries.
 
                             (env) pip install -r requirements.txt 
 
